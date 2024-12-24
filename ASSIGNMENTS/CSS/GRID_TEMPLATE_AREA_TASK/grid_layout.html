@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            background-color: bisque;
+            display: grid;
+            grid-template-areas:
+             "area1 area2 area2 area3"
+             "area1 area4 area5 area6"
+             "area1 area7 area8 area6";
+             padding: 20px;
+             grid-template-rows: 100px 100px 100px;
+             gap: 10px; 
+             border-radius: 10px;   
+        }
+        .md div{
+            border-radius: 15px;
+            box-shadow: 10px 10px 10px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+        .item1{
+            background-color: blueviolet;
+            grid-area: area1;
+        }
+        .item2{
+            background-color: brown;
+            grid-area: area2;
+        }
+        .item3{
+            background-color: chocolate;
+            grid-area: area3;
+        }
+        .item4{
+            background-color: cornflowerblue;
+            grid-area: area4;
+        }
+        .item5{
+            background-color: darkgreen;
+            grid-area: area5;
+        }
+        .item6{
+            background-color: darkslategrey;
+            grid-area: area6;
+        }
+        .item7{
+            background-color: gold;
+            grid-area: area7;
+        }
+        .item8{
+            background-color: greenyellow;
+            grid-area: area8;
+        }
+
+
+/* ..........secon grid task............ */
+
+        .md2{
+            display: grid;
+            background-color: wheat;
+            border: 2px;
+            gap: 10px;
+            grid-template-rows: 60px 100px;
+            /* grid-template-columns: 100px 160px 70px 60px 100px; */
+            padding: 50px;
+            grid-template-areas:
+            "area1 area2 area3 area4 area5 area6 "
+            "area7 area8 area8 area4 area5 area6 ";
+
+        }
+        .md2 div{
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px;
+        }
+        .item1_1{
+            background-color: crimson;
+            grid-area: area1;
+        }
+        .item2_1{
+            background-color: green;
+            grid-area: area2;
+        }
+        .item3_1{
+            background-color: darkgreen;
+            grid-area: area3;
+        }
+        .item4_1{
+            background-color: lightskyblue;
+            grid-area: area4;
+        }
+        .item5_1{
+            background-color: palevioletred;
+            grid-area: area5;
+        }
+        .item6_1{
+            background-color: violet;
+            grid-area: area6;
+            width: 10px;
+        }
+        .item7_1{
+            background-color: orange;
+            grid-area: area7;
+        }
+        .item8_1{
+            background-color: yellowgreen;
+            grid-area: area8;
+        }
+
+        /* .........TASK3............ */
+
+        .md_3{
+            background-color: wheat;
+            padding: 4px;
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 100px 100px 100px;
+            text-align: center;
+            grid-template-areas:
+             "area1 area2 area3"
+             "area4 area6 area6"
+             "area5 area6 area6";
+
+        }
+        .md_3 div{
+            box-shadow: 10PX 10PX 10PX;
+            align-content: center;
+            border-radius: 10px;
+        }
+        .A{
+            display: grid;
+            background-color: red;
+            grid-area: area1;
+        }
+        .B{
+            display: grid;
+            background-color: brown;
+            grid-area: area2;
+        }
+        .C{
+            display: grid;
+            background-color: burlywood;
+            grid-area: area3;
+        }
+        .D{
+            display: grid;
+            background-color: chartreuse;
+            grid-area: area4;
+        }
+        .E{
+            display: grid;
+            background-color: chocolate;
+            grid-area: area5;
+        }
+        .F{
+            display: grid;
+            background-color: cornflowerblue;
+            grid-area: area6;
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="item1">ONE</div>
+        <div class="item2">TWO</div>
+        <div class="item3">THREE</div>
+        <div class="item4">FOUR</div>
+        <div class="item5">FIVE</div>
+        <div class="item6">SIX</div>
+        <div class="item7">SEVEN</div>
+        <div class="item8">EIGHT</div>
+    </div><br><br><br><br><br><br>
+    <div class="md2">
+        <div class="item1_1">1</div>
+        <div class="item2_1">2</div>
+        <div class="item3_1">3</div>
+        <div class="item4_1">4</div>
+        <div class="item5_1">5</div>
+        <div class="item6_1">6</div>
+        <div class="item7_1">7</div>
+        <div class="item8_1">8</div>
+    </div><br><br><br><br><br><br><br>
+    <div class="md_3">
+        <div class="A">A</div>
+        <div class="B">B</div>
+        <div class="C">C</div>
+        <div class="D">D</div>
+        <div class="E">E</div>
+        <div class="F">F</div>
+    </div>
+
+</body>
+</html>

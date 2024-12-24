@@ -1,0 +1,124 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* Content Section */
+.content {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.content h3 {
+    margin-bottom: 20px;
+}
+
+.content-image {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}

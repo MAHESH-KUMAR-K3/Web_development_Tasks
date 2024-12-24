@@ -1,0 +1,64 @@
+*{
+    margin: 0px; 
+    padding: 20px;
+}
+
+.div1{
+    border: 3px solid black;
+    height: 500px;
+    width: 250px;
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px black;
+    
+    }
+    
+    .img{
+        border: 2px solid black;
+        /* width: px;
+        height: 200px; */
+        margin:  50px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: gray;
+    }
+    #trns1:checked ~ .img{
+        transform: translate(none);
+    
+    }
+    
+    
+    #trns2:checked ~ .img{
+        transform: rotateY(45deg);
+    }
+    #trns3:checked ~ .img{
+        transform:rotateX(75deg) ;
+    }
+    #trns4:checked ~ .img{
+        transform:rotateZ(100deg) ;
+    }
+    #trns5:checked ~ .img{
+        transform: rotate3d(1,2,5,200deg);
+    }
+    #trns6:checked ~ .img{
+        transform: rotate(80deg);
+    }
+     #trns7:checked ~ .img{
+        transform: skewX(65deg);
+     } 
+     #trns8:checked ~ .img{
+    transform: skewY(55deg);
+    
+    
+     } 
+     #trns9:checked ~ .img{
+        transform: rotate(90deg);
+     }  
+     #trns10:checked ~ .img{
+        transform: skew(20deg, 20deg);
+     }  
+     #trns11:checked ~ .img{
+        transform: translate(60px);
+    }

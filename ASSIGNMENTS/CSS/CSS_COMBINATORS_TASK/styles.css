@@ -1,0 +1,41 @@
+/* Style for the menu icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Hide the menu by default */
+.menu {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+/* Style the menu items */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the menu when hovering over the menu icon */
+.menu-icon:hover + .menu {
+    display: block;
+}

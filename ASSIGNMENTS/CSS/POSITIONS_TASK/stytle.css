@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fc;
+    box-sizing: border-box;
+  }
+  
+  /* Chat container */
+  .chat-container {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  
+  /* Chat window styles */
+  .chat-window {
+    padding: 20px;
+    max-height: 400px; /* Define the height of the chat window */
+    overflow-y: auto; /* Enable scrolling when messages overflow */
+    flex-grow: 1;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column-reverse; /* Ensures new messages appear at the bottom */
+  }
+  .chat-window::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .chat-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+  }
+  
+  .bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  .user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Input field and button styles */
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  #user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  #send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #send-button:hover {
+    background-color: #0056b3;
+  }
+.div1{
+    display: flex;
+    background-color: greenyellow;
+    height: 60px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+}
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <style>
+      img {
+        /* height: 99vh;
+        width: 99vw; */
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./images/worldmap.jpg" alt="world map" usemap="#world map" />
+    <map name="world map">
+      <area
+        shape="rect"
+        target="bed"
+        alt="bed"
+        title=""
+        href="./images/bed.webp"
+        coords="727,228,575,321"
+      />
+      <area
+        target=""
+        alt="ocean"
+        title="ocean"
+        href="./images/ocean.jpg"
+        coords="339,305,442,177,381,485,595,479,361,300,533,113,340,264,449,271,541,438"
+        shape="poly"
+      />
+      <area
+        target=""
+        alt="light"
+        title="light"
+        href="./images/light.webp"
+        coords="463,641,182"
+        shape="circle"
+      />
+    </map>
+  </body>
+</html>

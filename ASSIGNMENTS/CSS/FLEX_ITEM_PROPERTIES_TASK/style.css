@@ -1,0 +1,47 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    background-color: #f2f2f2;
+    height: 100vh;
+}
+
+/* Flex items */
+.flex-item {
+    background-color: peru;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 200px; /* flex-grow, flex-shrink, flex-basis */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect to demonstrate flex item behavior */
+.flex-item:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Adjusting the item layout on smaller screens */
+@media (max-width: 768px) {
+    .flex-container {
+        justify-content: center;
+    }
+    
+    .flex-item {
+        flex-basis: 45%;
+    }
+}

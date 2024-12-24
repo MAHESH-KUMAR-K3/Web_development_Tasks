@@ -1,0 +1,68 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+  }
+  
+  .box1 {
+    background-image: url('https://imgs.search.brave.com/nnM6gmP84CKlS-yZZtIcArH46TKCKM5UYpA_keSQtFw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzI3LzgyLzE0/LzM2MF9GXzIyNzgy/MTQ0MF9SMTFVdnZ3/UGk1c1VISmYzNHZp/bUpseHBjREllam1E/MS5qcGc');
+  }
+  
+  .box2 {
+    background-image: url('https://imgs.search.brave.com/6S7hftGFz2gMmFHbpaNrRPhIr7V7H4fQUozcJ1yqI8A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzM0MzkyMjg0L3Iv/aWwvYjU0ZDkwLzUz/ODgwNDAzNTQvaWxf/NjAweDYwMC41Mzg4/MDQwMzU0XzU5ZTIu/anBn');
+  }
+  
+  .box3 {
+    background-image: url('https://imgs.search.brave.com/qRjE5jbzaNXqD04B4lQFIoJeZt_rvQfnxCBqiBSDPco/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzM3LzE3LzI1/LzM2MF9GXzUzNzE3/MjUwMl9xaWJ6cGhC/M3VKM2F2cFpIRE90/eTgwSXhIclB2dWV4/Vy5qcGc');
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    .box {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .box1 {
+      background-image: url('https://imgs.search.brave.com/KKp5tp-hIksumAtLWQRU5LZ1QxH1t-b1iscswbBbxIc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5saWNkbi5jb20v/ZG1zL2ltYWdlL0Q0/RDEyQVFIMk12dE04/SFItb1EvYXJ0aWNs/ZS1jb3Zlcl9pbWFn/ZS1zaHJpbmtfNjAw/XzIwMDAvMC8xNjg1/MTgwOTk4MDUxP2U9/MjE0NzQ4MzY0NyZ2/PWJldGEmdD1mMS1y/Qm9MeURTWkQwNDgt/MTEyZThDRGFKa0hK/YVc5ZGZNNjZsNDVF/MUJZ.jpeg');
+      
+    }
+  
+    .box2 {
+      background-image: url('https://imgs.search.brave.com/WzdzFLBrzsUEarJluD2tdHEU8XtEgU2bkIW6lqz2Z5g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubmV3czE4LmNv/bS93ZWJzdG9yaWVz/L3VwbG9hZHMvMjAy/NC8wNi8xLTIwMjQt/MDYtNTU3ODI5ODk1/ZDM2ODU1MGM5N2E4/OGViNzZlOTEyZGYu/cG5n');
+      
+    }
+  
+    .box3 {
+      background-image: url('https://imgs.search.brave.com/47alIUpDPcZBPWryMKRukrGtR9fCCA_AQoX5bzO3PL0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3BlYWtpbmd0cmVl/LmluL3dlYnAvcy81/Nzg0LTkwMC0zMjAt/NS0xNTY0NzM4NzMz/LzI0LWluY2FybmF0/aW9ucy1vZi1sb3Jk/LXZpc2hudS5pbWc');
+      
+    }
+  }
+  

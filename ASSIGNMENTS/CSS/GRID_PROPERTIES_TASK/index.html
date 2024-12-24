@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR UI USING GRID</title>
+    <style>
+      body {
+        margin: auto;
+        justify-content: center;
+        padding: 50px;
+      }
+      .gridcontainer {
+        display: grid;
+        background-color: palevioletred;
+        height: 500px;
+        width: 330px;
+        box-shadow: 0px 0px 20px;
+        border-radius: 5px;
+        grid-template-columns: repeat(auto-flow,(minmax(54px,1fr))); 
+        gap: 10px; 
+        padding: 10px;
+        margin: auto;
+        
+      }
+      .gridcontainer > div {
+        display: grid;
+        border: 1px solid orange;
+        text-align: center;
+        align-items: center;
+        background-color:  gray;
+        border-radius: 30px;
+        box-shadow: 0px 0px 30px;
+      }
+      .output{
+        grid-column: 1/5;
+        grid-row: 1/3;
+      }
+      p{
+        position: relative;
+        top: 100px;
+        left: 120px;
+      }
+      .gridcontainer div:hover{
+        background-color: aqua;
+        cursor: pointer;
+      }
+      #item{
+        background-color: chartreuse;
+      }
+      #display{
+        background-color: aqua;
+      }
+      h3{
+        position: relative;
+        top: 38px;
+        left: 130px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridcontainer">
+        <div class="output" id="display"><p>1000+2000</p>
+        <h3>3000</h3></div>
+        <div id="item">AC</div>
+        <div id="item">( )</div>
+        <div id="item">%</div>
+        <div id="item">/</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div id="item">*</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div id="item">-</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div id="item">+</div>
+        <div>+/-</div>
+        <div>0</div>
+        <div>.</div>
+        <div id="item">=</div>
+      </div>
+    </div>
+  </body>
+</html>

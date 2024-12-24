@@ -1,0 +1,68 @@
+body {
+    background-color: powderblue;
+}
+
+
+.banner {
+    border: 5px solid white;
+    background-color: blueviolet;
+    color: white;
+}
+
+.band {
+    border: 5px solid black;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+.band > a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: rgb(168, 165, 165);
+    color: black;
+}
+
+.content > section {
+    border: 2px solid;
+    width: 70vw;
+    margin: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: large;
+    scroll-margin-top: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+
+}
+
+section > h2 , h3{
+    padding: 2%;
+    margin: auto;
+    text-align: center;
+}
+
+#ss > p, #ed > p{
+    text-align: center;
+}
+
+#ps, #ts, #ss, #in, #pr, #ed, #ce {
+    scroll-margin-top: 8vh;
+}
+
+#ps:target, #ts:target, #ss:target, #in:target, #pr:target, #ed:target, #ce:target  {
+    background-color: wheat;
+    color: black;
+    border: 2px solid black;
+}

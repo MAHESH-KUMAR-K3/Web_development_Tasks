@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+    <style>
+        body{
+            background-color: lightslategray;
+        }
+    </style>
+  </head>
+  <body style="text-align: center">
+    <fieldset>
+          <h2><u>Application Form</u></h2>
+          <form action="#" method="post">
+            <!-- Text Input for Full Name -->
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            /><br /><br />
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            /><br /><br />
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            /><br /><br />
+
+            <!-- Telephone Input -->
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            /><br /><br />
+
+            <!-- Date Input -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required /><br /><br />
+
+            <!-- Number Input -->
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="100"
+              required
+            /><br /><br />
+
+            <!-- Range Input -->
+            <label for="experience">Years of Experience:</label>
+            <input
+              type="range"
+              id="experience"
+              name="experience"
+              min="0"
+              max="40"
+              step="1"
+              value="5"
+              required
+            /><br /><br />
+
+            <!-- Select Dropdown -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="prefer_not_to_say">
+                Prefer not to say
+              </option></select
+            ><br /><br />
+
+            <!-- Radio Buttons -->
+            <label>Employment Status:</label>
+            <input
+              type="radio"
+              id="employed"
+              name="employment_status"
+              value="employed"
+              required
+            />
+            <label for="employed">Employed</label>
+            <input
+              type="radio"
+              id="unemployed"
+              name="employment_status"
+              value="unemployed"
+              required
+            />
+            <label for="unemployed">Unemployed</label><br /><br />
+
+            <!-- Checkbox -->
+            <label>Skills:</label>
+            <input type="checkbox" id="html" name="skills" value="html" />
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="css" />
+            <label for="css">CSS</label>
+            <input
+              type="checkbox"
+              id="javascript"
+              name="skills"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label><br /><br />
+
+            <!-- File Input -->
+            <label for="resume">Upload Resume (PDF):</label>
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              accept=".pdf"
+              required
+            /><br /><br />
+
+            <!-- Textarea for Message -->
+            <label for="message">Cover Letter:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Write your cover letter here..."
+              required
+            ></textarea
+            ><br /><br />
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Application" />
+          </form>
+    </fieldset>
+  </body>
+</html>
